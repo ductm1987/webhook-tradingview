@@ -4,8 +4,8 @@ import os
 
 app = Flask(__name__)
 
-TELEGRAM_BOT_TOKEN = os.environ.get("7732088541:AAHWkqKAo6hn7bQcE2eLEF89PmSuGIWZq4U")
-TELEGRAM_CHAT_ID = os.environ.get("-1002894747074")
+TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN") or "7732088541:AAHWkqKAo6hn7bQcE2eLEF89PmSuGIWZq4U"
+TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID") or "-1002894747074"
 
 @app.route('/')
 def home():
